@@ -3,8 +3,6 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  payPalUrl:'https://api.sandbox.paypal.com/v1/',
-  authKey:'QVN4d2x1clpzaW1FbXJISlBsTE1CTjVLNF9sbnR6UUdqTnVLQWJIUS10NDRJUzQ4QjZILXYtMERBemw5Rnk4aEhSYjdsSTVCbjNsMk1MUjM=',
   production: false
 };
 

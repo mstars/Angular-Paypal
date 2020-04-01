@@ -1,5 +1,23 @@
-<!-- <div id="paypal-button-container" (click)="doAuth()"></div> -->
- 
-<!-- <button (click)="doAuth()">Click Me</button> -->
 
-<ngx-paypal [config]="payPalConfig"></ngx-paypal>
+  <div class="container-fluid">
+      <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div *ngIf="!paidFor" class="text-center p-4 pt-4">
+
+                <h1>Buy this product - ${{ product.price }} </h1>
+              
+                <p>{{ product.description }}</p>
+              
+                <img width="400" [src]="product.img">
+              
+              </div>
+              
+              <div *ngIf="paidFor" class="text-center p-4 pt-4">
+                <h1>Yay, you bought a sweet Product!</h1>
+              </div>
+                         
+              <div [hidden]="paidFor" #paypal></div>
+              
+          </div>
+      </div>
+  </div>
